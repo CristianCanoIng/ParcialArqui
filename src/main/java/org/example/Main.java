@@ -58,6 +58,13 @@ import java.util.List;
                         break;
 
                     case 3:
+
+                        System.out.println("\nCabinas registradas");
+
+                        for(Cabina c: cabinas){
+                            System.out.println("Cabina: "+ c.getId());
+                        }
+
                         System.out.print("Ingrese el ID de la cabina: ");
                         int idMostrar = scanner.nextInt();
                         Cabina cabinaMostrar = cabinas.stream()
