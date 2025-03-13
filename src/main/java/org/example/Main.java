@@ -78,11 +78,11 @@ import java.util.List;
                         break;
 
                     case 5:
-                        System.out.println("Saliendo...");
+                        System.out.println("Chao");
                         break;
 
                     default:
-                        System.out.println("Opción no válida.");
+                        System.out.println("Esa opcion no existe");
                 }
             } while (opcion != 6);
 
