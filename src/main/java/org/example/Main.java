@@ -29,7 +29,13 @@ import java.util.List;
 
                     case 2:
 
-                        System.out.print("Ingrese el ID de la cabina: ");
+                        System.out.println("\nCabinas registradas");
+
+                        for(Cabina c: cabinas){
+                            System.out.println("Cabina: "+ c.getId());
+                        }
+
+                        System.out.print("\nIngrese el ID de la cabina: ");
                         int idCabina = scanner.nextInt();
                         Cabina cabinaSeleccionada = cabinas.stream()
                                 .filter(c -> c.getId() == idCabina)
